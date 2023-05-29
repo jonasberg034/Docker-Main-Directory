@@ -1,0 +1,4 @@
+docker image pull ubuntu --> docker run -it ubuntu  --> cat /etc/os-release
+docker build -t "clarusway/flask-app:1.0" .  --> docker run -d --name welcome -p 80:80 clarusway/flask-app:1.0
+docker image inspect ubuntu
+docker search ubuntu  #    Dockerhubtaki icinde ubuntu gecen imajlari bulur.
