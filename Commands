@@ -3,3 +3,4 @@ docker build -t "clarusway/flask-app:1.0" .  --> docker run -d --name welcome -p
 docker build --force-rm -t "petclinic-admin-server:dev" ./spring-petclinic-admin-server   # ara containerlari siler.
 docker image inspect ubuntu
 docker search ubuntu  #    Dockerhubtaki icinde ubuntu gecen imajlari bulur.
+docker prune image  "
