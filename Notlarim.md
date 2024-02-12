@@ -72,7 +72,7 @@ docker run -dit -v myvolume:/app nginx
 
 Uc adet default network drivers var.
 - Default
-- Host
+- Host  - Calisitigmiz makinenin agina baglanir.
 - Bridge 1)docker0 2)user defined
 
 - -p host_port:container_port 

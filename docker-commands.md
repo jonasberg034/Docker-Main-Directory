@@ -36,6 +36,9 @@
 
 > docker images ve docker image ls
 - Ayni komut bunlar!
+> docker image pull ubuntu
+> docker run -it ubuntu
+
 
 > docker container inspect <container-id>
 > docker container inspect clarus2nd | grep IPAddress
@@ -92,4 +95,13 @@ ping -c 4 google.com
 > docker network connect clarusnet clarus4th      
 - clarus4th container'i clarusnet agina baglar. Ama ayni zamanda default bridge aginda da olur. user-defined olur.
 
+> docker build -t "clarusway/flask-app:1.0" .
+> docker build -t "clarusway/flask-app:2.0" -f ./Dockerfile-alpine .
+> docker run -d --name welcome -p 80:80 clarusway/flask-app:1.0
+> docker search ubuntu
+- Dockerhub'ta ubuntu imajlarani search ediyor.
+> docker login
+> docker push clarusway/flask-app:1.0
 
+> docker compose up -d --build 
+- Guncelledigin Dockerfile'i guncellemek icin kullanilan komut. 
